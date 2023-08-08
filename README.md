@@ -9,9 +9,7 @@ In summary, the motivation behind this thesis stems from two main issues related
 ## Approach
 Let $\phi(x_\tau|x_0,...x_{\tau-2},x_{\tau-1})$ be the predicted class probability (or predicted value for regression problems) in timestep $\tau$, given the feature vectors $x$ of the previous timesteps $t=0,...,\tau-1$. Then the importance of timestep $t=\tau-1$ is given by the following equation:
 
-$
-    I(x_{\tau-1}) = |\phi(x_\tau|x_0,...,x_{\tau-2},x_{\tau-1}) - \phi(x_\tau|x_0,...,x_{\tau-2})|
-$
+$ I(x_{\tau-1}) = |\phi(x_\tau|x_0,...,x_{\tau-2},x_{\tau-1}) - \phi(x_\tau|x_0,...,x_{\tau-2})|$
 
 Since the variable $x_k$ is assumed to be the only dynamic variable in the feature vector $x = (x_1, \ldots, x_k, \ldots, x_n)$, the importance of the timestep $t=\tau-1$ equals the importance of the observed value of the feature $x_k$ in that timestep. 
 
